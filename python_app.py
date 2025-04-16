@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 app = Flask(__name__)
 
 # Get bucket name from environment variable
-bucket_name = os.environ.get('GCS_BUCKET_NAME')
+bucket_name = nova-staging-bucket
 if not bucket_name:
     logging.error("GCS_BUCKET_NAME environment variable not set.")
     # In a real app, you might raise an exception or exit
